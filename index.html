@@ -16,14 +16,22 @@
         </div>
         <div class="content__btn-box">
             <div class="content__btn-box-big">
-                <div class="box" id="firstBtn" onclick="handleButtonClick('singleplayer')">Singleplayer</div>
-                <div class="box" id="secondBtn" onclick="handleButtonClick('multiplayer')">Multiplayer</div>
+                <div class="box" id="firstBtn">Singleplayer</div>
+                <div class="box" id="secondBtn">Multiplayer</div>
             </div>
         </div>
     </div>
 
     <script src="js/config.js"></script>
     <script>
+        const firstBtn = document.getElementById("firstBtn");
+        const secondBtn = document.getElementById("secondBtn");
+
+        // Here are the first three buttons
+        firstBtn.innerHTML = "Singleplayerr";
+        secondBtn.innerHTML = "Multiplayer";
+
+        // Function to handle button clicks
         function handleButtonClick(action) {
             switch (action) {
                 case 'singleplayer':
@@ -38,6 +46,10 @@
                     console.log('Unknown action');
             }
         }
+
+        // Attach click event listeners to the buttons
+        firstBtn.addEventListener('click', () => handleButtonClick('singleplayer'));
+        secondBtn.addEventListener('click', () => handleButtonClick('multiplayer'));
     </script>
 </body>
 </html>
