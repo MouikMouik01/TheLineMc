@@ -8,8 +8,8 @@ const miniSecondButton = document.getElementById("miniSecondButton")
 // Here you can change the content of the buttons
 
 // Here are the first three buttons
-firstBtn.innerHTML = "Singleplayerr"
-secondBtn.innerHTML = "Multiplayer"
+firstBtn.innerHTML = "Nouveautés"
+secondBtn.innerHTML = "Télécharger"
 thirdBtn.innerHTML = "Minecraft Realms"
 
 // Here are the two small buttons
