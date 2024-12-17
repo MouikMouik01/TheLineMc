@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/msin.css">
     <title>Minecraft website server</title>
 </head>
 <body>
@@ -16,46 +15,68 @@
         </div>
         <div class="content__btn-box">
             <div class="content__btn-box-big">
-                <div class="box" id="firstBtn" onclick="handleButtonClick('singleplayer')">Singleplayer</div>
-                <div class="box" id="secondBtn" onclick="handleButtonClick('multiplayer')">Multiplayer</div>
-                <div class="box" id="thirdBtn" onclick="handleButtonClick('realms')">Minecraft Realms</div>
+                <div class="box">
+                    <div class="box-top"></div>
+                    <div class="box-right"></div>
+                    <div class="middle" id="firstBtn">...</div>
+                    <div class="box-bottom"></div>
+                    <div class="box-left"></div>
+                </div>
+                <div class="box">
+                    <div class="box-top"></div>
+                    <div class="box-right"></div>
+                    <div class="middle" id="secondBtn">...</div>
+                    <div class="box-bottom"></div>
+                    <div class="box-left"></div>
+                </div>
+                <div class="box">
+                    <div class="box-top"></div>
+                    <div class="box-right"></div>
+                    <div class="middle" id="thirdBtn">...</div>
+                    <div class="box-bottom"></div>
+                    <div class="box-left"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="content__btn-box-small">
-        <div class="box-mini" id="miniFirstButton" onclick="handleButtonClick('options')">Options...</div>
-        <div class="box" id="miniSecondButton" onclick="handleButtonClick('quit')">Quit Game</div>
+
+        <div class="box-mini">
+            <div class="box-top"></div>
+            <div class="box-right"></div>
+            <div class="middle">
+                <img src="img/pngwing.com.png" alt="">
+            </div>
+            <div class="box-bottom"></div>
+            <div class="box-left"></div>
+        </div>
+        <div class="box">
+            <div class="box-top"></div>
+            <div class="box-right"></div>
+            <div class="middle" id="miniFirstButton">...</div>
+            <div class="box-bottom"></div>
+            <div class="box-left"></div>
+        </div>
+        <div class="box">
+            <div class="box-top"></div>
+            <div class="box-right"></div>
+            <div class="middle" id="miniSecondButton">...</div>
+            <div class="box-bottom"></div>
+            <div class="box-left"></div>
+        </div>
+        <div class="box-mini">
+            <div class="box-top"></div>
+            <div class="box-right"></div>
+            <div class="middle">
+                <img src="img/kindpng_7921533.png" alt="">
+            </div>
+            <div class="box-bottom"></div>
+            <div class="box-left"></div>
+        </div>
+
     </div>
 
     <script src="js/config.js"></script>
-    <script>
-        function handleButtonClick(action) {
-            switch (action) {
-                case 'singleplayer':
-                    // Redirect to singleplayer page or action
-                    alert('Singleplayer selected');
-                    break;
-                case 'multiplayer':
-                    // Redirect to multiplayer page or action
-                    alert('Multiplayer selected');
-                    break;
-                case 'realms':
-                    // Redirect to realms page or action
-                    alert('Minecraft Realms selected');
-                    break;
-                case 'options':
-                    // Open options menu or action
-                    alert('Options...');
-                    break;
-                case 'quit':
-                    // Execute quit game action
-                    alert('Quit Game');
-                    break;
-                default:
-                    console.log('Unknown action');
-            }
-        }
-    </script>
 </body>
 </html>
